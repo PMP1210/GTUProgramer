@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 05
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a C program to enter a distance in to kilometer and convert it in to meter, feet, inches and centimeter</div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include stdio.h <br>
+                    
+                    int main() <br>
+                    {<br>
+                        printf("_______________________________________");<br>
+                        printf("\n\tCONVERT KILOMETERS INTO OTHER ");<br>
+                        printf("\n_______________________________________");<br><br>
+                        
+                        float kilometer,meter,feet,inches,centimeter;<br>
+                        printf("\nEnter the distance in kilometer:");<br>
+                        scanf("%f",&kilometer);<br><br>
+                        
+                        meter=kilometer*1000;<br>
+                        printf("\n\nThe distance in meter is=%.2f",meter);<br><br>
+                        
+                        feet=kilometer*3281;<br>
+                        printf("\n\nThe distance in feet is=%.2f",feet);<br><br>
+                        
+                        inches=kilometer*3281*12;<br>
+                        printf("\n\nThe distance in inches is=%.2f",inches);<br><br>
+                        
+                        centimeter=kilometer*10000;<br>
+                        printf("\n\nThe distance in centimeter is=%.2f",centimeter);<br><br>
+                        return 0;<br>
+                        
+                    }    
+                    
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-05.PNG" alt="Problem-05 img"></div>
+    </div>
+</body>
+</html>

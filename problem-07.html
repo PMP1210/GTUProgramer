@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 07
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a C program to find out distance travelled by the equation d = vt + at^2</div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+               
+                #include stdio.h <br>
+                int main() <br>
+                {<br>
+                    printf("\n________________________________________");<br>
+                    printf("\n\tFIND THE TRAVELL DISTANCE");<br>
+                    printf("\n________________________________________");<br><br>
+                    
+                    float d,u,t,a;<br>
+                    printf("\nEnter the U value :");<br>
+                    scanf("%f",&u);<br><br>
+                    
+                    printf("\nEnter the T value :");<br>
+                    scanf("%f",&t);<br><br>
+                    
+                    printf("\nEnter the A value :");<br>
+                    scanf("%f",&a);<br><br>
+                    
+                    d=(u*t)+(a)*(t*t);<br><br>
+                    
+                    printf("\nThe travell distance is (%.1f * %.1f)+(%.1f * %.1f)^2 = %.2f",u,t,a,t,d);<br><br>
+                    
+                    return 0;<br>
+                }     
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-07.PNG" alt="Problem-07 img"></div>
+    </div>
+</body>
+</html>
