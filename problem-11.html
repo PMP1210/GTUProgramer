@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 11
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a C program to check whether the entered character is capital, small letter, digit or any
+            special character.</div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include stdio.h <br>
+                    int main() <br>
+                    { <br>
+                        printf("\n___________________________________________");<br>
+                        printf("\n\tFIND SMALL/CAPITAL CHAR,DIGIT,SPECIAL CHAR");<br>
+                        printf("\n___________________________________________");<br><br>
+                        
+                        char a;<br>
+                        printf("\nEnter the character :");<br>
+                        scanf("%c",&a);<br>
+                        <br>
+                        if(a>='A' && a<='Z') <br>
+                        { <br>
+                            printf("\n%c is the Capital character.",a); <br>
+                        } <br>
+                        else if(a>='a' && a<='z') <br>
+                        { <br>
+                            printf("\n%c is the Small character.",a); <br>
+                        } <br>
+                        else if(a>='0' && a<='9') <br>
+                        { <br>
+                            printf("\n%c is the Digit.",a); <br>
+                        } <br>
+                        else <br>
+                        { <br>
+                            printf("\n%c is the Special character.",a); <br>
+                        } <br>
+                        return 0; <br> 	
+                    }
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-11-1.PNG" alt="Problem-01 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-11-2.PNG" alt="Problem-02 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-11-3.PNG" alt="Problem-03 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-11-4.PNG" alt="Problem-04 img"></div>
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
