@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 12
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a program to read marks from keyboard and your program should display
+            equivalent gradeaccording to following table. (if else ladder)
+            Marks Grade
+            100 - 80 Distinction
+            79 - 60 First Class
+            59 - 40 Second Class
+            < 40 Fail</div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include stdio.h  <br>
+
+                    int main() <br>
+                    { <br>
+                        printf("\n________________________________________"); <br>
+                        printf("\n\tFIND THE MAXIMUM VALUE"); <br>
+                        printf("\n________________________________________"); <br><br>
+                        
+                        float a; <br>
+                        printf("\nEnter the marks :");<br>
+                        scanf("%f",&a); <br> <br>
+                        
+                        if(a<=100 && a>=80) <br>
+                        { <br>
+                            printf("\nThe result is Distinction."); <br>
+                        } <br>
+                        else if(a<=79 && a>=60) <br>
+                        { <br>
+                            printf("\nThe result is First class."); <br>
+                        } <br>
+                        else if(a<=59 && a>=40) <br>
+                        {  <br>
+                            printf("\nThe result is Second class."); <br>
+                        } <br>
+                        else <br>
+                        { <br>
+                            printf("\nSorry,The student is Fail."); <br>
+                        } <br>
+                        return 0; <br>
+                    }
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-12-1.PNG" alt="Problem-01 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-12-2.PNG" alt="Problem-02 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-12-3.PNG" alt="Problem-03 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-12-4.PNG" alt="Problem-04 img"></div>
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
