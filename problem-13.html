@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 13
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a c program to prepare pay slip using following data.
+            Da = 10% of basic, Hra = 7.50% of basic, Ma = 300,
+            Pf = 12.50% of basic, Gross = basic + Da + Hra + Ma, Nt = Gross – Pf.</div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include stdio.h <br>
+                    int main() <br>
+                    { <br>
+                        printf("\n___________________________________________"); <br>
+                        printf("\n\n\tPAY - SLIP"); <br>
+                        printf("\n___________________________________________"); <br><br>
+                        
+                        float a,da=0,hra=0,ma=300,pf=0,gross=0,nt=0; <br>
+                        printf("\nEnter the basic amount :"); <br>
+                        scanf("%f",&a); <br><br>
+                        
+                        da=(a*10)/100; <br>
+                        hra=(a*7.50)/100; <br>
+                        pf=(a*12.50)/100; <br>
+                        gross=a+da+hra+ma; <br>
+                        nt=gross-pf; <br><br>
+                        
+                        printf("\n\nThe da of %.1f is =%.1f",a,da); <br>
+                        printf("\n\nThe hra of %.1f is =%.1f",a,hra); <br>
+                        printf("\n\nThe pf of %.1f is =%.1f",a,pf); <br>
+                        printf("\n\nThe gross of %.1f is =%.1f",a,gross); <br>
+                        printf("\n\nThe nt of %.1f is =%.1f",a,nt); <br><br>
+                        
+                        return 0;<br>
+                    }
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-13.PNG" alt="Problem-01 img"></div>
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
