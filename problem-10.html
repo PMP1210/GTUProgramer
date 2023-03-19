@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 10
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a program to read three numbers from keyboard and find out maximum out of these
+            three. (Nested if else)</div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include stdio.h <br>
+
+                    int main() <br>
+                    {<br>
+                        printf("\n________________________________________");<br>
+                        printf("\n\tFIND THE MAXIMUM VALUE");<br>
+                        printf("\n________________________________________");<br><br>
+                        
+                        float a,b,c;<br>
+                        printf("\nEnter the three values :");<br>
+                        scanf("%f %f %f",&a,&b,&c);<br><br>
+                        
+                        if(a>b && a>c) <br>
+                        {<br>
+                            printf("\nThe %.1f is greater than %.1f and %.1f.",a,b,c);<br>
+                        } <br>
+                        else if(b>a && b>c) <br>
+                        { <br>
+                            printf("\nThe %.1f is greater than %.1f and %.1f.",b,a,c); <br>
+                        } <br>
+                        else if(c>a && c>b) <br>
+                        { <br>
+                            printf("\nThe %.1f is greater than %.1f and %.1f.",c,a,b); <br>
+                        } <br><br>
+                        
+                        
+                        return 0; <br><br>
+                    }
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-10.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-09-02.PNG" alt="Problem-01 img"></div> -->
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
