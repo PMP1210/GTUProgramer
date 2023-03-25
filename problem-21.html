@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 21
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a C program to find the sum and average of different numbers which are accepted by
+            user as many as user wants.
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include stdio.h <br>
+                    int main() <br>
+                    { <br>
+                        printf("\n___________________________________________"); <br>
+                        printf("\n\tFIND SUM,AVG OF MANY NUMBERS"); <br>
+                        printf("\n___________________________________________"); <br><br>
+                        
+                        int i,a[100],b,sum=0; <br>
+                        float avg=0; <br>
+                        printf("\nEnter the number you want's to add:"); <br>
+                        scanf("%d",&b); <br><br>
+                        
+                        for(i=0;i<b;i++) <br>
+                        { <br>
+                            scanf("%d",&a[i]); <br>
+                            sum=sum+a[i]; <br>
+                            avg=(sum)/b; <br>
+                        } <br> <br>
+                        
+                        printf("\nThe sum is =%d",sum); <br>
+                        printf("\nThe average is =%.1f",avg); <br><br>
+                        
+                        return 0; <br>
+                        
+                    }
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-21.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-16-2.PNG" alt="Problem-02 img"></div> -->
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
