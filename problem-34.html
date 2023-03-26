@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 34
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Write a program to print following patterns: <br>
+            55555 <br>
+            4444 <br>
+            333 <br>
+            22 <br>
+            1 <br>
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                int main() <br>
+                { <br>
+	              printf("_____________________________________"); <br>
+	              printf("\n\tPatterns of numbers"); <br>
+                  printf("\n_____________________________________\n");  <br><br>
+	
+	              int i,j; <br>
+                  for(i=5;i>=1;i--) <br>
+                  {  <br>
+                     for(j=1;j<=i;j++) <br>
+                     { <br>
+                         printf("%d",i); <br> 
+                     } <br>
+                     printf("\n"); <br>
+                  } <br>
+                  printf("\n\n"); <br>
+                  return 0; <br>
+                }
+                
+                    <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-34.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-24-2.PNG" alt="Problem-02 img"></div> -->
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
