@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 22
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a program to calculate average and total of 5 students for 3 subjects. (use nested for
+            loops)
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                    int main() <br>
+                    { <br>
+                        printf("\n_____________________________________________________________"); <br>
+                        printf("\n\tTOTAL/AVG. OF 5 STUDENT FOR 3 SUB."); <br>
+                        printf("\n_____________________________________________________________"); <br><br>
+                        
+                        int s1[100],s2[100],s3[100],i,j,total[100]; <br>
+                        float avg[100]; <br>
+                        for(i=1;i<=5;i++) <br> 
+                        { <br>
+                           printf("\nEnter the %d student marks of 3 subject:",i); <br>
+                           scanf("\n%d %d %d",&s1[i],&s2[i],&s3[i]); <br>
+                        } <br>
+                        for(i=0;i<=5;i++) <br>
+                        { <br>
+                            for(j=0;j<=5;j++) <br>
+                            { <br>
+                                total[i]=s1[i]+s2[i]+s3[i]; <br>
+                                avg[i]=total[i]/3; <br>
+                            } <br>
+                        } <br>
+                        printf("\n_____________________________________________________________"); <br>
+                        for(i=1;i<=5;i++)  <br>
+                        { <br>
+                            printf("\nThe total of %d student=%d",i,total[i]); <br>
+                            printf("\nThe avg of  %d student=%.1f\n",i,avg[i]); <br>
+                            printf("\n_____________________________________________________________"); <br>
+                        } <br>
+                        return 0; <br>
+                    }
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-22.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-16-2.PNG" alt="Problem-02 img"></div> -->
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
