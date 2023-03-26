@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 56
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Define structure data type called time_struct containing three member’s integer hour, integer minute and integer second. Develop a program that would assign values to the individual number and display the time in the following format: 16: 40:51
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                struct time_struct <br>
+                 { <br>
+                    int hour; <br>
+                    int minute; <br>
+                    int second; <br>
+                    }; <br><br>
+                    
+                    int main()  <br>
+                    { <br>
+                    
+                    <!-- /*51. Define structure data type called time_struct containing three member’s integer hour, -->
+                    <!-- integer minute and integer second. Develop a program that would assign values to the -->
+                    <!-- individual number and display the time in the following format: 16: 40:51*/ -->
+                    
+                    printf("\tTime\n"); <br>
+                    printf("_________________________________"); <br><br>
+                    
+                    struct time_struct current_time; <br>
+                    current_time.hour = 16; <br>
+                    current_time.minute = 40; <br>
+                    current_time.second = 51; <br> <br>
+                    
+                    printf("\n\nCurrent Time:\n"); <br>
+                    printf("%02d : %02d : %02d\n", current_time.hour, current_time.minute, current_time.second); <br><br>
+                    
+                    return 0; <br>
+                    }
+  <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-56.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-55-2.PNG" alt="Problem-02 img"></div> -->
+        <!-- <div class="outputimg"><img src="pps-img/Problem-38-4.PNG" alt="Problem-02 img"></div> -->
+
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
