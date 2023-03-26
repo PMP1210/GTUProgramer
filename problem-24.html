@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 24
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">Write a program to check whether the given number is prime or not.
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                int main() <br>
+                { <br>
+                    printf("_________________________________________"); <br>
+                    printf("\n\tFIND THE NUMBER IS PRIME OR NOT"); <br>
+                    printf("\n_________________________________________"); <br><br>
+                    
+                    int n, i, count = 0; <br>
+                    printf("\nEnter a positive integer: "); <br>
+                    scanf("%d", &n); <br><br>
+                
+                    if (n == 0 || n == 1) <br>
+                      count= 1; <br><br>
+                
+                    for (i = 2; i <= n / 2; ++i) <br>
+                    { <br>
+                      if (n % i == 0)  <br>
+                      { <br>
+                        count = 1; <br>
+                        break; <br>
+                      } <br>
+                    } <br>
+                    if (count == 0) <br>
+                      printf("\n%d is a prime number.", n); <br>
+                    else <br>
+                      printf("\n%d is not a prime number.", n); <br>
+                } 
+                    <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-24-1.PNG" alt="Problem-01 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-24-2.PNG" alt="Problem-02 img"></div>
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
