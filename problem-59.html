@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 59
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Write a program to print address of variable using pointer.
+
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                int main() <br>
+                { <br>
+                
+                <!-- //54. Write a program to print address of variable using pointer. -->
+                
+                printf("\t\tAddress Of Variable\n"); <br>
+                printf("____________________________________________________\n\n"); <br><br>
+                
+                int x ; <br>
+                int *ptr = &x; <br><br>
+                
+                printf("Enter The Value of X : "); <br>
+                scanf("%d",&x); <br><br>
+                
+                printf("____________________________________________________\n\n"); <br>
+                printf("The address of x is: %p\n", (void*)ptr); <br>
+                printf("____________________________________________________\n\n"); <br> <br>
+                
+                return 0;<br>
+                }
+  <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-59.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-58-2.PNG" alt="Problem-02 img"></div> -->
+        <!-- <div class="outputimg"><img src="pps-img/Problem-58-3.PNG" alt="Problem-02 img"></div> -->
+
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
