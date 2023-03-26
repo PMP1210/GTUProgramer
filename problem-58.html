@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 58
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Design a structure student record to contain name, branch and total marks obtained. Develop a program to read data for 10 students in a class and print them.
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                struct student_record <br>
+                 { <br>
+                    char name[50]; <br>
+                    char branch[50]; <br>
+                    int total_marks; <br>
+                    }; <br><br>
+                    
+                    int main() <br>
+                    { <br>
+                    
+                    <!-- /*53. Design a structure student_record to contain name, branch and total marks obtained. -->
+                    <!-- Develop a program to read data for 10 students in a class and print them.*/ -->
+                    
+                    struct student_record student[10]; <br>
+                    int i; <br><br>
+                    
+                    printf("\tStudent Details\n"); <br>
+                    printf("________________________________________________"); <br><br>
+                    
+                    for (i = 0; i < 10; i++) <br>
+                    { <br>
+                    printf("\n\nEnter Name For Student %d: ", i+1); <br>
+                    scanf("%s", student[i].name); <br>
+                    printf("\nEnter Branch For Student %d: ", i+1); <br>
+                    scanf("%s", student[i].branch); <br>
+                    printf("\nEnter Total Marks For Student %d: ", i+1); <br>
+                    scanf("%d", &student[i].total_marks); <br>
+                    } <br><br>
+                    
+                    printf("\nStudent Records:\n"); <br>
+                    for (i = 0; i < 10; i++) <br>
+                    { <br>
+                    printf("\nName: %s\n", student[i].name); <br>
+                    printf("Branch: %s\n", student[i].branch); <br>
+                    printf("Total Marks: %d\n", student[i].total_marks); <br>
+                    printf("\n"); <br>
+                    } <br>
+                    
+                    return 0; <br>
+                    }
+  <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-58-1.PNG" alt="Problem-01 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-58-2.PNG" alt="Problem-02 img"></div>
+        <div class="outputimg"><img src="pps-img/Problem-58-3.PNG" alt="Problem-02 img"></div>
+
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
