@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 51
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Write a C program using global variable, static variable.
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                void func1(); <br>
+                void func2(); <br>
+                int global_var = 0; <br><br>
+                
+                int main()  <br>
+                { <br>
+                <!-- //47. Write a C program using global variable, static variable. -->
+                
+                
+                func1(); <br>
+                func1(); <br>
+                return 0; <br>
+                } <br><br>
+                
+                
+                void func1() <br>
+                 { <br>
+                static int static_var = 0; <br>
+                global_var++; <br>
+                static_var++; <br>
+                printf("\nIn func1, global_var = %d, static_var = %d\n", global_var, static_var); <br>
+                } <br><br>
+                
+                void func2() <br>
+                 { <br>
+                printf("\nIn func2, global_var = %d\n", global_var); <br>
+                } 
+                
+                
+  <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-51.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-47-2.PNG" alt="Problem-02 img"></div> -->
+        <!-- <div class="outputimg"><img src="pps-img/Problem-38-4.PNG" alt="Problem-02 img"></div> -->
+
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
