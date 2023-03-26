@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 52
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Write a function that will scan a character string passed as an argument and convert all lowercase character into their uppercase equivalents.
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                #include &lt;ctype.h&gt; <br> <br>
+
+                    void convertToUpper(char *str); <br>
+                    
+                    <!-- /* -->
+                    <!-- Write a function that will scan a character string passed as an argument and convert all -->
+                    <!-- lowercase character into their uppercase equivalents. -->
+                    <!-- */ -->
+                    
+                    int main() <br>
+                     { <br>
+                    char str[100]; <br>
+                    printf("\tUppercase Converter"); <br>
+                    printf("\n_____________________________________________\n\n"); <br>
+                    printf("Enter String : "); <br>
+                    gets(str); <br><br>
+                    
+                    printf("\n________________________________\n\n"); <br>
+                    printf("Original string: %s\n", str); <br>
+                    convertToUpper(str); <br>
+                    printf("\nConverted string: %s\n", str); <br>
+                    printf("\n_______________________________________\n"); <br><br>
+                    
+                    return 0; <br>
+                    } <br><br>
+                    
+                    void convertToUpper(char *str) <br>
+                     { <br>
+                    int i = 0; <br>
+                    while (str[i] != '\0') <br>
+                    { <br>
+                    if (islower(str[i])) <br>
+                    { <br>
+                    str[i] = toupper(str[i]); <br>
+                    } <br>
+                    i++; <br>
+                    } <br>
+                    } 
+                
+                
+  <br>
+                    <a href="https://www.programiz.com/c-programming/online-compiler/"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-52.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-47-2.PNG" alt="Problem-02 img"></div> -->
+        <!-- <div class="outputimg"><img src="pps-img/Problem-38-4.PNG" alt="Problem-02 img"></div> -->
+
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+</html>
