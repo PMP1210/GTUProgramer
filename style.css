@@ -161,6 +161,25 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.progress{
+    background-color: #f1f1f5;
+    height: 100vh;
+}
+
+.title1{
+    padding-left: 30%;
+    padding-top: 20%;
+    font-size: 500%;
+    color: #0d036b;
+}
+
+.title2{
+    padding-left: 42%;
+    padding-top: 2%;
+    font-size: 200%;
+    color: #201771e6;
+}
+
 .dbms{
     padding-left: 3%;
     width: 30%;
