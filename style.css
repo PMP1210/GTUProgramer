@@ -1,25 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.fab{
-   color:#0d036b;
-   padding-right: 2%;
-   padding-left: 2%;
+.fab {
+    color: #0d036b;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
-.fa-instagram{
-    color:#0d036b;
-   padding-right: 2%;
+.fa-instagram {
+    color: #0d036b;
+    padding-right: 2%;
 }
 
-.fa-github{
-    color:#0d036b;
-   padding-right: 2%;
+.fa-github {
+    color: #0d036b;
+    padding-right: 2%;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,219 +30,223 @@
     padding-right: 31px;
     background: #0d036b;
 }
-.nav-list{
-   width: 50%;
-   display: flex;
-   align-items: center;
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
-.nav-list li{
-   list-style: none;
-   padding: 26px 30px;
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
 }
 
-.nav-list li a{
-  text-decoration: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:#f8fbfe;;
+.nav-list li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8fbfe;
+    ;
 }
 
-.nav-list li a:hover{
-    color:gray;
+.nav-list li a:hover {
+    color: gray;
 }
-  
-.rightnav{
+
+.rightnav {
     width: 90%;
-    text-align:left;
+    text-align: left;
     padding: 0 23px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#f4f5f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f4f5f7;
     font-size: large;
     padding-right: 40px;
 }
 
-.main{
+.main {
     height: 86vh;
     margin: auto;
     background-color: #0d036be3;
-    
+
 }
 
 
 
-.devimg{
+.devimg {
     padding: 174px;
     padding-left: 27%;
     display: flex;
 }
 
-.titlepic{
+.titlepic {
     border: 2px solid #f3f2f800;
     border-radius: 50%;
 }
 
-.about{
+.about {
     display: flex;
     background: #f3f3f000;
-    margin:right;
-    padding:80px;
+    margin: right;
+    padding: 80px;
     color: #ededf0;
     padding-left: 40px;
 }
 
-.question{
+.question {
     color: #0d036b;
     padding-left: 21%;
 }
 
-.welcome{
+.welcome {
     padding: 0%;
     padding-top: 2%;
     width: 75%;
-    font-size:125%;
+    font-size: 125%;
     padding-left: 25%;
     background-color: #f8fbfe;
 }
 
-.intro{
-    color:#170250 ;
+.intro {
+    color: #170250;
     width: 70%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.services{
+.services {
     background-color: #fdfdfd;
     height: 66vh;
 }
 
-.titleservices{
+.titleservices {
     padding-top: 2%;
     padding-left: 32%;
     font-size: 300%;
     color: #0d036b;
 }
 
-.pps{
+.pps {
     padding-left: 3%;
     width: 30%;
     height: 210px;
     display: inline-table;
 }
 
-.img{
+.img {
     width: 37%;
-    
+
 }
 
-.subjecttitle{
+.subjecttitle {
     padding-left: 35%;
     font-size: 175%;
-    color:#44318c ;
+    color: #44318c;
 }
 
-.img1{
-    padding-left:0%;
+.img1 {
+    padding-left: 0%;
 }
 
-.img2{
+.img2 {
     width: 89%;
 }
 
-.ppsabout{
-    padding-left:2%;
+.ppsabout {
+    padding-left: 2%;
     align-items: center;
     justify-content: center;
-    background-color: #9a9d9e58 ;;
+    background-color: #9a9d9e58;
+    ;
     width: 87%;
     text-decoration: none;
     color: #0d036b;
     height: 23%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template-columns:20% 20% 20%;
+    grid-template-columns: 20% 20% 20%;
     align-items: center;
-    
+
 }
 
-.ds{
+.ds {
     padding-left: 3%;
     width: 30%;
     height: 210px;
     display: inline-table;
 }
 
-.dsabout{
+.dsabout {
     padding-left: 2%;
-    background-color: #9a9d9e58 ;
+    background-color: #9a9d9e58;
     width: 87%;
     height: 23%;
     color: #0d036b;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.progress{
+.progress {
     background-color: #f1f1f5;
     height: 100vh;
 }
 
-.title1{
+.title1 {
     padding-left: 30%;
     padding-top: 20%;
     font-size: 500%;
     color: #0d036b;
 }
 
-.title2{
+.title2 {
     padding-left: 42%;
     padding-top: 2%;
     font-size: 200%;
     color: #201771e6;
 }
 
-.dbms{
+.dbms {
     padding-left: 3%;
     width: 30%;
     height: 210px;
     display: inline-table;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dbmsabout{
+.dbmsabout {
     padding-left: 2%;
-    background-color:#9a9d9e58 ;
+    background-color: #9a9d9e58;
     width: 87%;
     height: 23%;
     color: #0d036b;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.contectform{
-    background-color:#ffffff ;;
+.contectform {
+    background-color: #ffffff;
+    ;
 }
 
-.titlecontectform{
+.titlecontectform {
     padding-top: 2%;
     padding-left: 35%;
     font-size: 300%;
     color: #0d036b;
 }
 
-.contectformsubtitle{
+.contectformsubtitle {
     padding-left: 38%;
     font-size: 175%;
     color: #44318c;
 }
 
-.guidance{
+.guidance {
     padding-left: 13%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(45, 32, 148);
 }
 
-form{
+form {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -253,18 +257,19 @@ form{
     border-radius: 10px;
 }
 
-form input , form textarea{
-     border: 2px solid #0d036b;
-     border-radius:20px;
-     margin: 10px 0px;
-     padding: 20px;
-     outline: none;
-     background: #f3f3f0;
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 16px;
+form input,
+form textarea {
+    border: 2px solid #0d036b;
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: #f3f3f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
-form button{
+form button {
     padding: 15px;
     background: #0f0283;
     color: #f4f5f7;
@@ -275,10 +280,10 @@ form button{
     margin: 20px auto 0;
     border: 2px solid #0d036b;
     border-radius: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.run{
+.run {
     padding: 15px;
     background: #0f0283;
     color: #f4f5f7;
@@ -289,28 +294,28 @@ form button{
     margin: 20px auto 0;
     border: 2px solid #0d036b;
     border-radius: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-form button:hover{
-   color: rgb(57, 11, 240);
-   background: #1b0ddf03;   
+form button:hover {
+    color: rgb(57, 11, 240);
+    background: #1b0ddf03;
 }
 
-.footer{
+.footer {
     background-color: #0f056a;
     color: #f3f3f0;
-    height: 23px;   
+    height: 23px;
     padding: 2%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.containt{
+.containt {
     width: 100%;
     display: flex;
 }
 
-.contactlink{
+.contactlink {
     background-color: #0f056a;
     width: 10%;
     margin-left: 52%;
@@ -318,13 +323,13 @@ form button:hover{
     color: #eae8f4;
 }
 
-.color{
+.color {
     color: #eae8f4;
 }
 
 
 
-.problemno{
+.problemno {
     background-color: #a5aaa700;
     padding: 2%;
     padding-left: 42%;
@@ -332,33 +337,33 @@ form button:hover{
     font-size: 350%;
 }
 
-.problemstetment{
+.problemstetment {
     background-color: #edecf200;
     padding: 1.5%;
     color: #0d036b;
     padding-right: 14%;
-    padding-left:20%;
+    padding-left: 20%;
 }
 
-.statement{
-    padding-left:1%;
+.statement {
+    padding-left: 1%;
     color: #554d9f;
     font-size: 180%;
 }
 
-.heading{
+.heading {
     color: #0f056a;
     font-size: 200%;
 }
 
-.code{
+.code {
     background-color: #f7f6f300;
-    padding-left:20%;
+    padding-left: 20%;
     color: #0f056a;
     font-size: 200%;
 }
 
-.codesection{
+.codesection {
     color: rgb(55, 29, 88);
     font-size: 70%;
     padding-left: 2%;
@@ -370,18 +375,18 @@ form button:hover{
     background-color: #b0b4b6;
 }
 
-.outputheading{
+.outputheading {
     color: #0f056a;
     font-size: 200%;
     padding-left: 20%;
 }
 
-.outputimg{
+.outputimg {
     padding-left: 21%;
     padding-top: 2%;
 }
 
-.burger{
+.burger {
     display: none;
     position: absolute;
     cursor: pointer;
@@ -389,16 +394,15 @@ form button:hover{
     top: 15px;
 }
 
-.line{
+.line {
     width: 33px;
     background-color: #f8fafb;
     height: 4px;
     margin: 5px 3px;
 }
 
-@media only screen and (max-width:1194px)
-{
-    .navbar{
+@media only screen and (max-width:1194px) {
+    .navbar {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -412,88 +416,89 @@ form button:hover{
         height: 447px;
     }
 
-    .main{
+    .main {
         /* flex-direction: column-reverse; */
         max-width: 100%;
         height: 110%;
     }
-    
+
     .devimg {
         flex-direction: column;
         padding-left: 22%;
-        
+
     }
 
-    .about{
+    .about {
         padding-left: 145px;
     }
 
-    .nav-list{
+    .nav-list {
         /* width: 50%; */
         display: flex;
         align-items: center;
         flex-direction: column;
-     }
+    }
 
-     .burger{
+    .burger {
         display: block;
         padding-right: 1%;
-     }
+    }
 
-     .h-nav{
+    .h-nav {
         height: 72px;
-     }
+    }
 
-     .v-class{
+    .v-class {
         opacity: 0;
-     }
+    }
 
-     .nav-list li{
+    .nav-list li {
         list-style: none;
         padding: 26px 30px;
-     }
-     
-     .nav-list li a{
-       text-decoration: none;
-       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       color:#f8fbfe;;
-     }
-     
-     .nav-list li a:hover{
-         color:gray;
-     }
-       
-     .rightnav{
-         width: 90%;
-         text-align:left;
-         padding: 0 23px;
-         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         color:#f4f5f7;
-         font-size: large;
-         padding-right: 40px;
-         padding-left: 0%;
-     }
+    }
 
-     .welcome{
+    .nav-list li a {
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f8fbfe;
+        ;
+    }
+
+    .nav-list li a:hover {
+        color: gray;
+    }
+
+    .rightnav {
+        width: 90%;
+        text-align: left;
+        padding: 0 23px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f4f5f7;
+        font-size: large;
+        padding-right: 40px;
+        padding-left: 0%;
+    }
+
+    .welcome {
         padding: 0%;
         padding-top: 2%;
         /* width: 75%; */
         max-width: 768px;
-        font-size:125%;
+        font-size: 125%;
         padding-left: 28%;
         background-color: #f8fbfe;
     }
-    
-    .services{
+
+    .services {
         width: 100%;
     }
 
-    .intro{
-        color:#170250 ;
+    .intro {
+        color: #170250;
         width: 70%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
+
     .pps {
         padding-left: 36%;
         width: 30%;
@@ -520,40 +525,39 @@ form button:hover{
         flex-direction: column;
     }
 
-    .ppsabout{
-        width: 98%;
-    }
-
-    
-    .dsabout{
-        width: 98%;
-    }
-
-    
-    .dbmsabout{
+    .ppsabout {
         width: 98%;
     }
 
 
-    .contectform{
+    .dsabout {
+        width: 98%;
+    }
+
+
+    .dbmsabout {
+        width: 98%;
+    }
+
+
+    .contectform {
         padding-top: 50%;
         /* padding-right: 5%; */
     }
-     
-    .guidance{
+
+    .guidance {
         width: 80%
     }
 }
 
-@media only screen and (max-width:1024px)
-{
+@media only screen and (max-width:1024px) {
     .contectform {
         padding-top: 59%;
         padding-right: 41%;
     }
 }
-@media only screen and (max-width:912px)
-{
+
+@media only screen and (max-width:912px) {
     .contectform {
         padding-top: 14%;
         padding-right: 41%;
@@ -562,22 +566,21 @@ form button:hover{
 
 
 
-@media only screen and (max-width:871px)
-{
-    .contectform{
+@media only screen and (max-width:871px) {
+    .contectform {
         padding-top: 59%;
         padding-right: 34%;
     }
-    
-    .welcome{
+
+    .welcome {
         padding-left: 17%;
     }
-    
-    .services{
+
+    .services {
         width: 78%;
     }
 
-    .contectform{
+    .contectform {
         padding-right: 37%;
     }
 
@@ -611,8 +614,7 @@ form button:hover{
     }
 }
 
-@media only screen and (max-width:646px)
-{
+@media only screen and (max-width:646px) {
     .about {
         padding-left: 82px;
     }
@@ -639,11 +641,10 @@ form button:hover{
         padding-top: 86%;
         padding-right: 36%;
     }
-    
+
 }
 
-@media only screen and (max-width:541px)
-{
+@media only screen and (max-width:541px) {
     .about {
         padding-left: 50px;
     }
@@ -684,8 +685,7 @@ form button:hover{
     }
 }
 
-@media only screen and (max-width:466px)
-{
+@media only screen and (max-width:466px) {
     .about {
         padding-left: 28px;
     }
@@ -696,8 +696,7 @@ form button:hover{
     }
 }
 
-@media only screen and (max-width:400px)
-{
+@media only screen and (max-width:400px) {
     .services {
         width: 11%;
     }
@@ -742,5 +741,30 @@ form button:hover{
     .guidance {
         width: 104%;
         padding-left: 18%;
+    }
+
+    .img2 {
+        width: 371%;
+    }
+
+    .ppsabout {
+        width: 366%;
+    }
+
+
+    .footer {
+        background-color: #0f056a;
+        color: #f3f3f0;
+        height: 99px;
+        padding: 2%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .contactlink {
+        background-color: #0f056a;
+        width: 21%;
+        /* margin-left: -19%; */
+        padding-left: -21%;
+        color: #eae8f4;
     }
 }
