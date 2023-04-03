@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/problem_style.css  ">
+    <link rel="stylesheet" href="css/all.css">
+    <title>GTU Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="rightnav">
+            GTU Programmers
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contect">Contect</a></li>
+        </ul>
+    </nav>
+    <div class="problemno">
+        Problem 53
+    </div>
+    <div class="problemstetment">
+        <div class="heading">
+            <h4><u>Problem statement:-</u></h4>
+        </div><br>
+        <div class="statement">
+            Write a program to sort given array in ascending order (Use Insertion sort, Bubble sort, Selection sort,Mergesort, Quicksort, Heapsort).
+            </div>
+    </div>
+    <div class="code">
+        <div class="codeheading">
+            <h4><u>Code:-</u></h4>
+        </div><br>
+        <div class="codesection">
+            <code>
+                #include &lt;stdio.h&gt; <br>
+                #include &lt;stdlib.h&gt; <br> <br>
+                void printArray(int arr[], int n); <br>
+                void swap(int *a, int *b); <br>
+                void insertionSort(int arr[], int n); <br>
+                void bubbleSort(int arr[], int n); <br>
+                void selectionSort(int arr[], int n); <br>
+                void merge(int arr[], int l, int m, int r); <br>
+                void mergeSort(int arr[], int l, int r); <br>
+                int partition(int arr[], int low, int high); <br>
+                void quickSort(int arr[], int low, int high); <br>
+                void heapify(int arr[], int n, int i); <br>
+                void heapSort(int arr[], int n); <br><br>
+                
+                
+                int main() <br>
+                { <br>
+                    int size,i; <br>
+                    printf("How Many Element You Want To Enter: "); <br>
+                    scanf("%d",&size); <br><br>
+                    
+                    int arr[size]; <br><br>
+                    
+                    for(i=0;i< size;i++) <br>
+                    { <br>
+                        printf("\nEnter The Element [%d] : ",i+1); <br>
+                        scanf("%d",&arr[i]); <br>
+                    } <br> <br>
+                    
+                    int n = sizeof(arr) / sizeof(arr[0]); <br>
+                    int choice; <br><br>
+                
+                    printf("\n\nOriginal Array: \n"); <br>
+                    printArray(arr, n); <br><br>
+                
+                    printf("\nSelect the sorting algorithm to use:\n\n"); <br> 
+                    printf("1. Insertion Sort\n"); <br>
+                    printf("2. Bubble Sort\n"); <br>
+                    printf("3. Selection Sort\n"); <br>
+                    printf("4. Merge Sort\n"); <br>
+                    printf("5. Quick Sort\n"); <br>
+                    printf("6. Heap Sort\n"); <br>
+                    printf("\nEnter your choice: "); <br>
+                    scanf("%d", &choice); <br><br>
+                
+                    switch (choice) <br>
+                    { <br>
+                    case 1: <br>
+                        printf("\nSorted Array using Insertion Sort: \n"); <br>
+                        insertionSort(arr, n); <br>
+                        break; <br><br>
+                    case 2: <br>
+                        printf("\nSorted Array using bubble Sort: \n"); <br>
+                        bubbleSort(arr, n); <br>
+                        break; <br><br>
+                    case 3: <br>
+                        printf("\nSorted Array using Selection Sort: \n"); <br>
+                        selectionSort(arr, n); <br> 
+                        break; <br><br>
+                    case 4: <br>
+                        printf("\nSorted Array using Merge Sort: \n"); <br>
+                        mergeSort(arr, 0, n - 1); <br>
+                        break; <br><br>
+                    case 5: <br>
+                        printf("\nSorted Array using Quick Sort: \n"); <br>
+                        quickSort(arr, 0, n - 1); <br>
+                        break; <br><br>
+                    case 6: <br>
+                        printf("\nSorted Array using Heap Sort: \n"); <br>
+                        heapSort(arr, n); <br>
+                        break; <br><br>
+                    default: <br>
+                        printf("Invalid choice.\n"); <br>
+                    } <br><br>
+                
+                    printArray(arr, n); <br><br>
+                
+                    return 0; <br>
+                } <br><br>
+                
+                void printArray(int arr[], int n) <br>
+                { <br>
+                    int i; <br>
+                    for (i = 0; i < n; i++) <br>
+                        printf("%d ", arr[i]); <br>
+                    printf("\n"); <br>
+                } <br> <br>
+                
+                
+                void swap(int *a, int *b) <br>
+                { <br>
+                    int temp = *a; <br>
+                    *a = *b; <br>
+                    *b = temp; <br>
+                } <br> <br>
+                
+                
+                void insertionSort(int arr[], int n) <br>
+                { <br>
+                    int i, key, j; <br>
+                    for (i = 1; i < n; i++) <br>
+                    { <br>
+                        key = arr[i]; <br>
+                        j = i - 1; <br><br>
+                
+                        while (j >= 0 && arr[j] > key) <br>
+                        { <br>
+                            arr[j + 1] = arr[j]; <br>
+                            j = j - 1; <br>
+                        } <br>
+                        arr[j + 1] = key; <br>
+                    } <br>
+                } <br> <br>
+                
+                
+                void bubbleSort(int arr[], int n) <br>
+                { <br>
+                    int i, j; <br>
+                    for (i = 0; i < n - 1; i++) <br>
+                    { <br>
+                        for (j = 0; j < n - i - 1; j++) <br>
+                        { <br>
+                            if (arr[j] > arr[j + 1]) <br>
+                                swap(&arr[j], &arr[j + 1]); <br>
+                        } <br>
+                    } <br>
+                } <br><br>
+                
+                
+                void selectionSort(int arr[], int n) <br>
+                { <br>
+                    int i, j, min_idx; <br>
+                    for (i = 0; i < n - 1; i++) <br>
+                    { <br>
+                        min_idx = i; <br>
+                        for (j = i + 1; j < n; j++) <br>
+                        { <br>
+                            if (arr[j] < arr[min_idx]) <br>
+                                min_idx = j; <br>
+                        } <br>
+                        swap(&arr[min_idx], &arr[i]); <br>
+                    } <br>
+                } <br><br>
+                
+                
+                void merge(int arr[], int l, int m, int r) <br>
+                { <br>
+                    int i, j, k; <br>
+                    int n1 = m - l + 1; <br>
+                    int n2 = r - m; <br><br>
+                
+                    int L[n1], R[n2]; <br><br>
+                
+                    for (i = 0; i < n1; i++) <br>
+                        L[i] = arr[l + i]; <br>
+                    for (j = 0; j < n2; j++) <br>
+                        R[j] = arr[m + 1 + j]; <br> <br>
+                
+                    i = 0; <br>
+                    j = 0; <br>
+                    k = l; <br>
+                    while (i < n1 && j < n2) <br>
+                    { <br>
+                        if (L[i] < = R[j]) <br>
+                        {  <br>
+                            arr[k] = L[i]; <br>
+                            i++; <br>
+                        } <br><br>
+                
+                        else <br>
+                        { <br>
+                            arr[k] = R[j]; <br>
+                            j++; <br>
+                        } <br>
+                        k++; <br>
+                    } <br><br>
+                
+                    while (i < n1) <br>
+                    { <br>
+                        arr[k] = L[i]; <br>
+                        i++; <br>
+                        k++; <br>
+                    } <br><br>
+                
+                    while (j < n2) <br>
+                    { <br>
+                        arr[k] = R[j]; <br>
+                        j++; <br>
+                        k++; <br>
+                    } <br>
+                } <br><br>
+                
+                
+                void mergeSort(int arr[], int l, int r) <br>
+                { <br>
+                    if (l < r) <br>
+                    { <br>
+                        int m = l + (r - l) / 2; <br>
+                        mergeSort(arr, l, m); <br>
+                        mergeSort(arr, m + 1, r); <br>
+                        merge(arr, l, m, r); <br>
+                    } <br>
+                } <br><br>
+                
+                
+                int partition(int arr[], int low, int high) <br>
+                { <br>
+                    int j,  pivot = arr[high]; <br>
+                    int i = (low - 1); <br><br>
+                
+                    for (j = low; j < = high - 1; j++) <br>
+                    { <br>
+                        if (arr[j] < = pivot) <br>
+                        { <br>
+                            i++; <br>
+                            swap(&arr[i], &arr[j]); <br>
+                        } <br>
+                    } <br>
+                    swap(&arr[i + 1], &arr[high]); <br>
+                    return (i + 1); <br>
+                } <br><br>
+                
+                
+                void quickSort(int arr[], int low, int high) <br>
+                { <br>
+                    if (low < high) <br>
+                    { <br>
+                        int pi = partition(arr, low, high); <br>
+                        quickSort(arr, low, pi - 1); <br>
+                        quickSort(arr, pi + 1, high); <br>
+                    } <br>
+                } <br><br>
+                
+                
+                void heapify(int arr[], int n, int i) <br>
+                { <br>
+                    int largest = i; <br>
+                    int l = 2 * i + 1; <br>
+                    int r = 2 * i + 2; <br><br>
+                
+                    if (l < n && arr[l] > arr[largest]) <br>
+                        largest = l; <br><br>
+                
+                    if (r < n && arr[r] > arr[largest]) <br>
+                        largest = r; <br><br>
+                
+                    if (largest != i) <br>
+                    { <br>
+                        swap(&arr[i], &arr[largest]); <br>
+                        heapify(arr, n, largest);<br>
+                    } <br>
+                } <br><br>
+                
+                
+                void heapSort(int arr[], int n) <br>
+                { <br>
+                    int i; <br>
+                    for (i = n / 2 - 1; i >= 0; i--) <br>
+                        heapify(arr, n, i); <br><br>
+                
+                    for (i = n - 1; i >= 0; i--) <br>
+                    { <br>
+                        swap(&arr[0], &arr[i]); <br>
+                        heapify(arr, i, 0);<br>
+                    } <br>
+                } <br>
+                
+  <br>
+                    <a href="https://replit.com/@PMP1210/Problem-53c#Problem-53.c"><button type="run" class="run">Run</button></a>
+            </code>
+        </div>
+    </div>
+    <div class="problemstetment">
+        <div class="heading"><b><u>Description:-</u></b></div><br>
+        <div class="statement"></div>
+    </div>
+    <div class="output">
+        <div class="outputheading"><b><u>Output:-</u></b></div>
+        <div class="outputimg"><img src="pps-img/Problem-53.PNG" alt="Problem-01 img"></div>
+        <!-- <div class="outputimg"><img src="pps-img/Problem-47-2.PNG" alt="Problem-02 img"></div> -->
+        <!-- <div class="outputimg"><img src="pps-img/Problem-38-4.PNG" alt="Problem-02 img"></div> -->
+
+    </div>
+    <footer class="footer">
+        <div class="containt">
+            <i class="fa-regular fa-copyright"></i> Copyright 2023.All right reserved , GTU Programmer. 
+            <div class="contactlink">
+                <a href="https://facebook.com"target="_main"><i class="fab  fa-facebook-f color"></i></a>&nbsp;&nbsp;
+            <a href="https://instagram.com/gtu_programer"target="_main"><i class="fa-brands fa-instagram color"></i></a>&nbsp;&nbsp;
+            <a href="https://github.com/PMP1210"target="_main"><i class="fa-brands fa-github color"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="js/resp.js"></script>
+</body>
+</html>
